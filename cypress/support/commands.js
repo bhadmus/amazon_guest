@@ -23,3 +23,7 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+Cypress.Commands.add("fetch", ()=>{
+    cy.get('#twotabsearchtextbox').type('Cardillac')
+    cy.get('.nav-search-submit > .nav-input').click()
+})
