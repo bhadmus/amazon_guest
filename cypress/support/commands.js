@@ -27,3 +27,9 @@ Cypress.Commands.add("fetch", ()=>{
     cy.get('#twotabsearchtextbox').type('Cardillac')
     cy.get('.nav-search-submit > .nav-input').click()
 })
+
+Cypress.Commands.add("checkThenAddtoCart", ()=>{
+    cy.get('[data-asin="B000025R46"] > :nth-child(1) > .s-include-content-margin > .a-spacing-medium > :nth-child(2) > .sg-col-16-of-24 > :nth-child(1) > :nth-child(1) > .sg-col-4-of-12 > .sg-col-inner > .a-section > .a-size-mini > .a-link-normal > .a-size-medium').click()
+    cy.get('#a-autoid-4-announce > :nth-child(1)').contains('Audio CD').should('be.visible')
+    cy.get('#add-to-cart-button-ubb').click()
+})
