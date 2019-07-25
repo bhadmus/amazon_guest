@@ -19,7 +19,11 @@ context('The Shopper\'s Journey:  ', () => {
         
         // Verify that Audio CD is present
         //cy.get('#a-autoid-4-announce > :nth-child(1)').contains('Audio CD').should('be.visible')
+        
+        //So I decided to experiment with more custom commands and this is a really cool feature, fewer lines of codes to display, neater looking scripts.
+        // I combined three lines of codes into one, Picked the item, verified that Audio CD was there then I added to cart with a single line of code.
         cy.checkThenAddtoCart('[data-asin="B000025R46"] > :nth-child(1) > .s-include-content-margin > .a-spacing-medium > :nth-child(2) > .sg-col-16-of-24 > :nth-child(1) > :nth-child(1) > .sg-col-4-of-12 > .sg-col-inner > .a-section > .a-size-mini > .a-link-normal > .a-size-medium')
+        
         // Add it to Cart
         //cy.get('#add-to-cart-button-ubb').click()
 
