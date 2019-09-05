@@ -22,7 +22,7 @@ context('The Shopper\'s Journey:  ', () => {
         
         //So I decided to experiment with more custom commands and this is a really cool feature, fewer lines of codes to display, neater looking scripts.
         // I combined three lines of codes into one, Picked the item, verified that Audio CD was there then I added to cart with a single line of code.
-        cy.clickVerifyCart('#search > div.sg-row > div.sg-col-20-of-24.sg-col-28-of-32.sg-col-16-of-20.sg-col.s-right-column.sg-col-32-of-36.sg-col-8-of-12.sg-col-12-of-16.sg-col-24-of-28 > div > span:nth-child(4) > div.s-result-list.s-search-results.sg-row > div:nth-child(1) > div > div > div > div:nth-child(2) > div:nth-child(2) > div > div > h2 > a > span')
+        cy.clickVerifyCart('Cardillac and Audio CD')
         
         // Add it to Cart
         //cy.get('#add-to-cart-button-ubb').click()

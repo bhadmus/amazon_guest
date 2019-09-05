@@ -9,6 +9,7 @@
   "author": "Ademola Bhadmus",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^3.4.0"
+    "cypress": "^3.4.0",
+    "lodash": "^4.17.15" 
   }
 }
