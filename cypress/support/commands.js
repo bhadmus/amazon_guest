@@ -29,7 +29,7 @@ Cypress.Commands.add("iSearchedFor", ()=>{
 })
 
 Cypress.Commands.add("clickVerifyCart", ()=>{
-    cy.get('[data-asin="B000025R46"] > :nth-child(1) > .s-expand-height > .a-spacing-medium > :nth-child(2) > :nth-child(3) > .sg-col-inner > .a-section > .a-size-mini > .a-link-normal > .a-size-base-plus').click()
-    cy.get('#a-autoid-4-announce > :nth-child(1)').contains('Audio CD').should('be.visible')
-    cy.get('#add-to-cart-button-ubb').click()
+    cy.get('[data-asin="B000XXWFMK"] > :nth-child(1) > .celwidget > .s-include-content-margin > .a-spacing-medium > :nth-child(2) > .sg-col-16-of-24 > :nth-child(1) > :nth-child(1) > .sg-col-4-of-12 > .sg-col-inner > :nth-child(1) > .a-size-mini > .a-link-normal > .a-size-medium').click()
+    cy.get('.a-size-large').contains('(Excerpts)').should('be.visible')
+    cy.get('#dm_atcb_B000XXWFMK-announce').click()
 })
