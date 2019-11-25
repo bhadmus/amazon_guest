@@ -5,8 +5,7 @@ context('The Shopper\'s Journey:  ', () => {
         // Navigate to the amazon site
         cy.visit('/')
         
-        // Type Cardillac into the text box 
-        //cy.get('#twotabsearchtextbox').type('Cardillac')
+       
 
         // So I created a custom command ("iSearchedFor") here to search for Cardillac(the code above) and then submit the search word (the code below)
         cy.iSearchedFor('Cardillac')
